@@ -1,4 +1,4 @@
-# clues (split)
+# Descrive
     - 600 reserved words
     - Cobol Divisions
     
@@ -8,3 +8,5 @@
     ----- Sentences (IF ... END-IF)
     ------ Statements (ADD, DIVIDE, COMPUTE)
 
+# Curiosity
+- Cobol is not case sensitive, although there are guidelines
