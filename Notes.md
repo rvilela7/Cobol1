@@ -10,3 +10,4 @@
 
 # Curiosity
 - Cobol is not case sensitive, although there are guidelines
+- It's my responsability to enforce TYPES

@@ -18,8 +18,10 @@
 
 # source
     - https://www.academictutorials.com/cobol/
-    - https://www.youtube.com/watch?v=RdMAEdGvtLA
-    - https://www.youtube.com/watch?v=ez0GbpWCOzc
+    Intro VSCODE with COBOL
+        - https://www.youtube.com/watch?v=RdMAEdGvtLA
+    Cobol Basics
+        - https://www.youtube.com/watch?v=TBs7HXI76yU
 
 
 # Running
