@@ -6,11 +6,15 @@
         - WSL
 
 # Requirements
-    ## Option 1
+    ## Option 1 (Hyper-V)
         - Java >11 64bits (IBM Java 21)
-    ## Option 2
+    ## Option 2 (Hyper-V)
     - WSL 
         wsl --install -d Debian
+        (Requires HyperT. CPU)
+    ## Option 3
+        Cygwin
+        GnuCobol
 
 # source
     - https://www.academictutorials.com/cobol/
