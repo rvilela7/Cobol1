@@ -1,5 +1,7 @@
 # Handle my tutorials (cygwin env. in win)
-CC=cobc
+# -F use free format
+CC=cobc -x -F
+CCo= cobc -m -F
 
 usage:
 	@echo "use:"
@@ -7,14 +9,22 @@ usage:
 	@echo "make clean"
 
 t1:
-	$(CC) -x 1BasicDisplayInputTut.cbl
+	$(CC) 1BasicDisplayInputTut.cbl
 	./1BasicDisplayInputTut.exe
 t2:
-	$(CC) -x 2ArithmeticTut.cbl
+	$(CC) 2ArithmeticTut.cbl
 	./2ArithmeticTut.exe
 t3:
-	$(CC) -x 3*.cbl
-	./3DataConditionalLoopTut.exe
+	$(CC) 3*.cbl
+	./3*.exe
+t4:
+	$(CC) 4*.cbl
+	./4*.exe
+
+t5:
+	$(CCo) 5GetSum.cbl
+	$(CC) 5CallGetSum.cbl
+	./5CallGetSum.exe
 
 clean:
 	rm -f *.exe

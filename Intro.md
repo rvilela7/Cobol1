@@ -18,9 +18,9 @@
 
 # source
     - https://www.academictutorials.com/cobol/
-    Intro VSCODE with COBOL
+    - Intro VSCODE with COBOL
         - https://www.youtube.com/watch?v=RdMAEdGvtLA
-    Cobol Basics
+    - Cobol basic instructions
         - https://www.youtube.com/watch?v=TBs7HXI76yU
 
 

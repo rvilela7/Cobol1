@@ -1,4 +1,5 @@
-       *> Notice that a compiler note appears if not alligned after col 7
+       *> NOTice that a compiler note appears IF not alligned AFTER col 7
+       
        IDENTIFICATION DIVISION.
        PROGRAM-ID. 1BasicDisplayInputTut.
        AUTHOR. Rui Vilela.
