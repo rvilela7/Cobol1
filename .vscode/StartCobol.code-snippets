@@ -2,7 +2,7 @@
 	"COBOL Program Template": {
 		"prefix": "coboltemplate",
 		"body": [
-			"			>>SOURCE FORMAT FREE",
+			"            >>SOURCE FORMAT FREE",
 			"",
 			"       IDENTIFICATION DIVISION.",
 			"       PROGRAM-ID. ${1:Placeholder for program name}.",
@@ -10,7 +10,7 @@
 			"       DATE-WRITTEN. ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}",
 			"",
 			"       ENVIRONMENT DIVISION.",
-			"		CONFIGURATION SECTION.",
+			"       CONFIGURATION SECTION.",
 			"       DATA DIVISION.",
 			"       FILE SECTION.",
 			"       WORKING-STORAGE SECTION.",
