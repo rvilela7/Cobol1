@@ -20,11 +20,24 @@ t3:
 t4:
 	$(CC) 4*.cbl
 	./4*.exe
-
 t5:
 	$(CCo) 5GetSum.cbl
 	$(CC) 5CallGetSum.cbl
 	./5CallGetSum.exe
+t6:
+	$(CC) 6Looping.cbl
+	./6Looping.exe
+t7:
+	$(CC) 7*.cbl
+	./7*.exe
+
+t8:
+	$(CC) 8*.cbl
+	./8*.exe	
+
+t9:
+	$(CC) 9Strings.cbl
+	./9Strings.exe
 
 clean:
 	rm -f *.exe

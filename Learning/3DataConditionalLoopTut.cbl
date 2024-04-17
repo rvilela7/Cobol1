@@ -77,7 +77,7 @@
        DISPLAY "Enter Single Number or X to Exis: " *> Loop example
        ACCEPT TESTNUMBER
        PERFORM UNTIL NOT ANumber
-           EVALUATE TRUE
+           EVALUATE TRUE *> Similar to a switch
                WHEN ISPRIME DISPLAY "PRIME"
                WHEN ISODD DISPLAY "ODD"
                WHEN ISPRIME DISPLAY "Even"
