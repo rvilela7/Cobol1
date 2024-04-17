@@ -1,5 +1,4 @@
        >>SOURCE FORMAT FREE
-
        IDENTIFICATION DIVISION.
        PROGRAM-ID. FileReport.
        AUTHOR. Rui Vilela.
