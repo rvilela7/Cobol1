@@ -1,6 +1,8 @@
+       *> Arithmetic operations
+       
        IDENTIFICATION DIVISION.
        *> This was produced automatically by identification snippet
-       PROGRAM-ID. CobolTut2.
+       PROGRAM-ID. ArithmeticTut2.
        AUTHOR. Rui Vilela.
        INSTALLATION.  where.
        DATE-WRITTEN.  16/04/2024.
@@ -22,7 +24,7 @@
         01 SIGNEDINT PIC S9(4) VALUE -1234. *> Signed
         01 PAYCHECK PIC 9(4)V99 VALUE ZERO. *> 9999.99
         01 CUSTOMER.
-           02 IDENT PIC 9(3).
+           02 IDENT PIC 9(3). *> Notice change of level!
            02 CUSTNAME PIC X(20).
            02 DATEOFBIRTH.
                03 MOB PIC 99.

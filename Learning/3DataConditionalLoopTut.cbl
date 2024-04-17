@@ -1,5 +1,12 @@
+       *> Complex DATA types with CLASS
+       *> TYPE Definition
+       *> 88 Data structure definition
+       *> Conditional IFs,
+       *> Loop
+
+       
        IDENTIFICATION DIVISION. *> Configuration of custom data
-       PROGRAM-ID. CobolTut3.
+       PROGRAM-ID. 3DataConditionalLoopTut.
        AUTHOR. Rui Vilela.
        DATE-WRITTEN.  16/04/2024.
        ENVIRONMENT DIVISION.
@@ -7,13 +14,13 @@
        SPECIAL-NAMES.
            CLASS PassingScore IS "A" THRU "C" , "D".
        DATA DIVISION.
-        FILE SECTION.
+        FILE SECTION. *> Can omit
         WORKING-STORAGE SECTION.
-        01 AGE PIC 99 VALUE 0.
+        01 AGE PIC 99 VALUE 0. *> Note that
         01 GRADE PIC 99 VALUE 0.
         01 SCORE PIC X(1) VALUE "B".
         01 CANVOTEFLAG PIC 9 VALUE 0.
-           88 CANVOTE VALUE 1.  *> 88 - USE a condition TO a variable (bool)
+           88 CANVOTE VALUE 1.  *> 88 - USE a condition TO a variable (bool) . This is a "special feature" from COB
            88 CANTVOTE VALUE 0.
         01 TESTNUMBER PIC X.
            88 ISPRIME VALUE "1", "3", "5", "7".
@@ -61,7 +68,7 @@
        *> SET
 
        IF AGE > 18 *> THEN OMIT
-           SET CANVOTE TO TRUE
+           SET CANVOTE TO TRUE *> I can't use MOVE because it's a conditional
        ELSE
            SET CANTVOTE TO TRUE
        END-IF
