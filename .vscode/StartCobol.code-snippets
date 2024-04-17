@@ -1,0 +1,26 @@
+{
+	"COBOL Program Template": {
+		"prefix": "coboltemplate",
+		"body": [
+			">>SOURCE FORMAT FREE",
+			"",
+			"       IDENTIFICATION DIVISION.",
+			"       PROGRAM-ID. ${1:Placeholder for program name}.",
+			"       AUTHOR. Rui Vilela.",
+			"       DATE-WRITTEN.  ${2:Placeholder for date (DD/MM/YYYY)}.",
+			"       SECURITY.",
+			"",
+			"       ENVIRONMENT DIVISION.",
+			"       FILE-CONTROL.",
+			"",
+			"       DATA DIVISION.",
+			"       FILE SECTION.",
+			"       WORKING-STORAGE SECTION.",
+			"",
+			"       PROCEDURE DIVISION.",
+			"",
+			"           STOP RUN."
+		],
+		"description": "COBOL Program Template"
+	}
+}
