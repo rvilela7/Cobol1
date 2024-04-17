@@ -2,25 +2,24 @@
 	"COBOL Program Template": {
 		"prefix": "coboltemplate",
 		"body": [
-			">>SOURCE FORMAT FREE",
+			"			>>SOURCE FORMAT FREE",
 			"",
 			"       IDENTIFICATION DIVISION.",
 			"       PROGRAM-ID. ${1:Placeholder for program name}.",
 			"       AUTHOR. Rui Vilela.",
-			"       DATE-WRITTEN.  ${2:Placeholder for date (DD/MM/YYYY)}.",
-			"       SECURITY.",
+			"       DATE-WRITTEN. ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}",
 			"",
 			"       ENVIRONMENT DIVISION.",
-			"       FILE-CONTROL.",
-			"",
+			"		CONFIGURATION SECTION.",
 			"       DATA DIVISION.",
 			"       FILE SECTION.",
 			"       WORKING-STORAGE SECTION.",
 			"",
 			"       PROCEDURE DIVISION.",
 			"",
-			"           STOP RUN."
+			"           STOP RUN.",
+			""
 		],
-		"description": "COBOL Program Template"
+		"description": "my COBOL Program Template"
 	}
 }
