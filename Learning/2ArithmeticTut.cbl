@@ -1,29 +1,19 @@
-       *> Arithmetic operations
-       
+            >>SOURCE FORMAT FREE
        IDENTIFICATION DIVISION.
-       *> This was produced automatically by identification snippet
        PROGRAM-ID. ArithmeticTut2.
        AUTHOR. Rui Vilela.
        INSTALLATION.  where.
        DATE-WRITTEN.  16/04/2024.
        DATE-COMPILED. 16/04/2024.
-       SECURITY.
-       ENVIRONMENT DIVISION.
-       CONFIGURATION SECTION. 
-       SOURCE-COMPUTER. pc.
-       OBJECT-COMPUTER. pc.
-       SPECIAL-NAMES.
-       INPUT-OUTPUT SECTION.
-       FILE-CONTROL.
+       DATE-WRITTEN. 18/04/2024.      *> Reviewing
        DATA DIVISION.
-        FILE SECTION.
         WORKING-STORAGE SECTION.
         01 SAMPLEDATA PIC X(10) VALUE "Stuff".
-        01 JUSTLetters PIC AAA VALUE "ABC". *> Just Letters
+        01 JUSTLetters PIC UUU VALUE "ABC". *> Just uppercase letters
         01 JUSTNUMS PIC 9(4) VALUE 1234. *> Nums
         01 SIGNEDINT PIC S9(4) VALUE -1234. *> Signed
         01 PAYCHECK PIC 9(4)V99 VALUE ZERO. *> 9999.99
-        01 CUSTOMER.
+        01 CUSTOMER. *> Data Group
            02 IDENT PIC 9(3). *> Notice change of level!
            02 CUSTNAME PIC X(20).
            02 DATEOFBIRTH.
@@ -36,7 +26,6 @@
        01 ANS PIC S99V99 VALUE ZERO.
        01 REM PIC 9V99.
 
-        LINKAGE SECTION.
        PROCEDURE DIVISION.
        MOVE "More Stuff" TO SAMPLEDATA
        MOVE "123" TO SAMPLEDATA
@@ -84,8 +73,8 @@
 
        *> --------------------------------------------------------------
        
-       ADD NUM1, NUM2 TO NUM3 GIVING ANS
-       ADD NUM1, NUM2, NUM3 GIVING ANS
+       ADD NUM1, NUM2 TO NUM3 GIVING ANS 
+       ADD NUM1, NUM2, NUM3 GIVING ANS *> 2nd way
        DISPLAY ANS
        COMPUTE ANS = NUM1 + NUM2
        COMPUTE ANS = NUM1 - NUM2
@@ -98,7 +87,7 @@
        DISPLAY ANS
        COMPUTE ANS = 3 + 5 * 5
        DISPLAY ANS
-       COMPUTE ANS ROUNDED = 3.0 + 2.005
+       COMPUTE ANS ROUNDED = 3.0 + 2.005 *> math func.
        DISPLAY ANS
 
        STOP RUN.
